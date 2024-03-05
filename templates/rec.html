@@ -1,0 +1,299 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="zxx">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="keywords"
+    content="Sectoral Responsive web template, Bootstrap Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+  <title>Speaker</title>
+  <link href="//fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="static/css/style-starter.css">
+</head>
+
+<body>
+  <!--header-->
+  <header id="site-header" class="w3lhny-head fixed-top">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg stroke px-0">
+<!--        <h1> <a class="navbar-brand" href="/">-->
+<!--            <span class="sublog"><span class="fa fa-industry w3llog-icon" aria-hidden="true"></span>Speaker</span><br>Identifier-->
+<!--          </a></h1>-->
+
+  <a class="navbar-brand" href="/">
+      <img src="static/images/icon.png" alt="Your logo" title="Your logo" style="height:35px;" />
+      <span class="sublog"><span aria-hidden="true"></span>Voice Authenticity Checker</span><br>
+  </a>
+        <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
+          data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+          <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mx-lg-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/rec">Recognizer</a>
+            </li>
+
+
+            <!--/search-right-->
+
+            <!--//search-right-->
+          </ul>
+        </div>
+        <!-- toggle switch for light and dark theme -->
+        <div class="mobile-position">
+          <nav class="navigation">
+            <div class="theme-switch-wrapper">
+              <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox">
+                <div class="mode-container">
+                  <i class="gg-sun"></i>
+                  <i class="gg-moon"></i>
+                </div>
+              </label>
+            </div>
+          </nav>
+        </div>
+        <!-- //toggle switch for light and dark theme -->
+      </nav>
+    </div>
+  </header>
+  <!--/header-->
+  <!-- main-slider -->
+  <section class="w3l-main-slider" id="home">
+    <div class="companies20-content">
+      <div class="owl-one owl-carousel owl-theme">
+        <div class="item">
+          <li>
+            <div class="slider-info banner-view bg bg2">
+              <div class="banner-info">
+                <div class="container">
+                  <center><h4 style="color: cyan;">{{msg}}</h4></center>
+                  <div class="banner-info-bg">
+                    <p class="mt-md-4 mt-3"> With the help of Neural Networks providing better recognizers
+                    </p>
+
+                    <form action="{{url_for('rec')}}" method="POST" enctype="multipart/form-data">
+                      <h4 style="color:white;"> <br>Upload the audio files</h4> <br>
+                          <input type="file" name="file" required>
+                      <input type="submit" class="btn btn-warning" value="submit" required>
+
+                     </form>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </div>
+
+
+
+      </div>
+      <!--/w3l-industry-address-->
+
+      <!--//w3l-industry-address-->
+    </div>
+  </section>
+  <!-- /main-slider -->
+  <!--/about-section -->
+
+  <!-- //about-section -->
+  <!-- home page block1 -->
+
+  <!-- //home page block1 -->
+
+  <!-- home page block grids -->
+   <!-- /content-6-section -->
+   <section class="w3l-content-mid py-5">
+    <!-- /content-6-section -->
+
+  </section>
+  <!-- //content-6-section -->
+  <!-- home page block grids -->
+
+  <!-- //home page block grids -->
+  <!-- stats -->
+
+  <!-- //stats-->
+  <!-- testimonials section -->
+
+  <!-- //testimonials section -->
+  <!-- footer-28 block -->
+  <footer class="footer-28 position-relative py-5">
+
+
+
+    <!-- move top -->
+    <button onclick="topFunction()" id="movetop" title="Go to top">
+      &#10548;
+    </button>
+    <script>
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction()
+      };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("movetop").style.display = "block";
+        } else {
+          document.getElementById("movetop").style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <!-- /move top -->
+    <!-- //footer-28 block -->
+  </footer>
+
+  <!-- Template JavaScript -->
+  <script src="static/js/jquery-3.3.1.min.js"></script>
+  <script src="static/js/theme-change.js"></script>
+  <!-- owlcarousel -->
+  <!-- owl carousel -->
+  <script src="static/js/owl.carousel.js"></script>
+  <!-- script for banner slider-->
+  <script>
+    $(document).ready(function () {
+      $('.owl-one').owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: true,
+        responsiveClass: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplaySpeed: 1000,
+        autoplayHoverPause: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          480: {
+            items: 1
+          },
+          667: {
+            items: 1
+          },
+          1000: {
+            items: 1
+          }
+        }
+      })
+    })
+  </script>
+  <!-- //script -->
+  <!-- script for tesimonials carousel slider -->
+  <script>
+    $(document).ready(function () {
+      $("#owl-demo2").owlCarousel({
+        loop: true,
+        nav: false,
+        margin: 50,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+            nav: false
+          },
+          736: {
+            items: 1,
+            nav: false
+          },
+          991: {
+            items: 2,
+            margin: 30,
+            nav: false
+          },
+          1080: {
+            items:3,
+            nav: false
+          }
+        }
+      })
+    })
+  </script>
+  <!-- //script for tesimonials carousel slider -->
+  <!-- owl carousel -->
+
+  <!-- script for tesimonials carousel slider -->
+  <script>
+    $(document).ready(function () {
+      $("#owl-demo2").owlCarousel({
+        loop: true,
+        margin: 20,
+        nav: false,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+            nav: false
+          },
+          1000: {
+            items: 1,
+            nav: false,
+            loop: false
+          }
+        }
+      })
+    })
+  </script>
+  <!-- //script for tesimonials carousel slider -->
+  <!-- stats number counter-->
+  <script src="static/js/jquery.waypoints.min.js"></script>
+  <script src="static/js/jquery.countup.js"></script>
+  <script>
+    $('.counter').countUp();
+  </script>
+  <!-- //stats number counter -->
+  <!--/MENU-JS-->
+  <script>
+    $(window).on("scroll", function () {
+      var scroll = $(window).scrollTop();
+
+      if (scroll >= 80) {
+        $("#site-header").addClass("nav-fixed");
+      } else {
+        $("#site-header").removeClass("nav-fixed");
+      }
+    });
+
+    //Main navigation Active Class Add Remove
+    $(".navbar-toggler").on("click", function () {
+      $("header").toggleClass("active");
+    });
+    $(document).on("ready", function () {
+      if ($(window).width() > 991) {
+        $("header").removeClass("active");
+      }
+      $(window).on("resize", function () {
+        if ($(window).width() > 991) {
+          $("header").removeClass("active");
+        }
+      });
+    });
+  </script>
+  <!--//MENU-JS-->
+
+  <script src="static/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

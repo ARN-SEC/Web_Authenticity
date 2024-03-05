@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Voice Authenticity Checker</title>
+  <link href="//fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="static/css/style-starter.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header id="site-header" class="w3lhny-head fixed-top">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg stroke px-0">
+        <a class="navbar-brand" href="/">
+          <img src="static/images/icon.png" alt="Your logo" title="Your logo" style="height:35px;" />
+          <span class="sublog">Voice Authenticity Checker</span><br>
+        </a>
+        <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
+          data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+          <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mx-lg-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/rec">Upload Voice</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <!-- Main Slider -->
+  <section class="w3l-main-slider" id="home">
+    <div class="companies20-content">
+      <div class="owl-one owl-carousel owl-theme">
+        <div class="item">
+          <li>
+            <div class="slider-info banner-view bg bg2">
+              <div class="banner-info">
+                <div class="container">
+
+                  <div class="banner-info-bg">
+                    <h5>AI-Generated Voice Detection System</h5>
+                    <p class="mt-md-4 mt-3">Detect AI-generated voices with advanced neural network algorithms.</p>
+                    <a class="btn btn-style btn-outline-light mt-sm-5 mt-4" href="/rec">
+                      Upload Voice <span class="fa fa-arrow-right ml-3" aria-hidden="true"></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Main Slider -->
+
+  <!-- About Section -->
+  <section class="w3l-index1 py-5" id="about">
+    <div class="container py-lg-5 py-md-3">
+      <div class="header-section text-center mx-0 mb-md-5 mb-4">
+        <h6 class="title-subhny">About Us</h6>
+        <h3 class="title-w3l mt-2">About Our System</h3>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 mb-lg-0 mb-md-5 mb-4 align-self">
+          <h4 class="title-sub">Our System</h4>
+          <p class="mt-md-4 mt-3">Our system utilizes cutting-edge neural network technologies to analyze voice patterns and determine whether they are AI-generated or not.</p>
+        </div>
+        <div class="col-lg-6 pl-lg-5">
+          <div class="position-relative">
+            <img src="static/images/voice1.jpg" alt="" class="radius-image img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+  <!-- Footer -->
+  <footer class="footer-28 position-relative py-5">
+    <!-- Move to top button -->
+    <button onclick="topFunction()" id="movetop" title="Go to top">&#10548;</button>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- JavaScript -->
+  <script src="static/js/jquery-3.3.1.min.js"></script>
+  <script src="static/js/theme-change.js"></script>
+  <script src="static/js/owl.carousel.js"></script>
+  <!-- Script for banner slider -->
+  <script>
+    $(document).ready(function () {
+      $('.owl-one').owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: true,
+        responsiveClass: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplaySpeed: 1000,
+        autoplayHoverPause: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          480: {
+            items: 1
+          },
+          667: {
+            items: 1
+          },
+          1000: {
+            items: 1
+          }
+        }
+      })
+    })
+  </script>
+  <!-- End Script -->
+  <!--/MENU-JS-->
+  <script>
+    $(window).on("scroll", function () {
+      var scroll = $(window).scrollTop();
+
+      if (scroll >= 80) {
+        $("#site-header").addClass("nav-fixed");
+      } else {
+        $("#site-header").removeClass("nav-fixed");
+      }
+    });
+
+    // Main navigation Active Class Add Remove
+    $(".navbar-toggler").on("click", function () {
+      $("header").toggleClass("active");
+    });
+    $(document).on("ready", function () {
+      if ($(window).width() > 991) {
+        $("header").removeClass("active");
+      }
+      $(window).on("resize", function () {
+        if ($(window).width() > 991) {
+          $("header").removeClass("active");
+        }
+      });
+    });
+  </script>
+  <!-- End MENU-JS -->
+
+  <script src="static/js/bootstrap.min.js"></script>
+</body>
+
+</html>
